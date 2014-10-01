@@ -50,7 +50,7 @@ So what do you get for this? Now when you access loopback resources in angular y
 ```js
 //Supposing you have exposed a customer model on your loopback api
 function(Customer) {
-	//figure our what properties the cuomer model has at runtime
+	//figure our what properties the customer model has at runtime
 	modelProps = Customer.model.properties;
 }
 ```
