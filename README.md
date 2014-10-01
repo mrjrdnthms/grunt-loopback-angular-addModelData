@@ -46,7 +46,7 @@ grunt.registerTask('loopback', [
 ```
 
 ### Usage Examples
-So what do you get for this? Now when you access loopback resources in angular you can get at the model info sotred in the model.json file. As in
+So what do you get for this? Now when you access loopback resources in angular you can get at the model info stored in the model.json file. As in
 ```js
 //Supposing you have exposed a customer model on your loopback api
 function(Customer) {
