@@ -50,14 +50,14 @@ Default value: `'.'`
 A string value that is used to do something else with whatever else.
 
 ### Usage Examples
-Add Task to your gruntfile
+Add Task to your gruntfile. service.options shown are defaults so you can leave them off if using the same.
 ```js
 loopback_angular_addModelData: {
       services: {
         options: {
           modelConfig: 'server/model-config.json',
           serviceFile: 'client/app/scripts/lb-services.js',
-	        modelDir: 'common/models/'
+          modelDir: 'common/models/'
         }
       }
     }
