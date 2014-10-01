@@ -22,35 +22,8 @@ grunt.loadNpmTasks('grunt-loopback-angular-addModelData');
 ### Overview
 In your project's Gruntfile, add a section named `loopback_angular_addModelData` to the data object passed into `grunt.initConfig()`.
 
-```js
-grunt.initConfig({
-  loopback_angular_addModelData: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
-});
-```
+Service.options shown are defaults so you can leave them off if using the same. Should look like
 
-### Options
-
-#### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
-
-### Usage Examples
-Add Task to your gruntfile. service.options shown are defaults so you can leave them off if using the same.
 ```js
 loopback_angular_addModelData: {
       services: {
@@ -71,6 +44,18 @@ grunt.registerTask('loopback', [
     'docular'
   ]);
 ```
+
+### Usage Examples
+So what do you get for this? Now when you access loopback resources in angular you can get at the model info sotred in the model.json file. As in
+```js
+//Supposing you have exposed a customer model on your loopback api
+function(Customer) {
+	//figure our what properties the cuomer model has at runtime
+	modelProps = Customer.model.properties;
+}
+```
+
+I built this becuase I use [angular-formly](https://github.com/nimbly/angular-formly) to automatically generate forms for editing models. By getting access to model properties at runtime and can build out the forms simply based on the fields defined in custmor.json
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
