@@ -8,6 +8,8 @@
 
 'use strict';
 
+var path = require('path');
+
 module.exports = function(grunt) {
 
   // Please see the Grunt documentation for more information regarding task
@@ -16,35 +18,50 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('loopback_angular_addModelData', 'Extends grunt-loopback-angular. Auto-generated Angular $resource services for loopback will include model data for use at runtime on angular clients', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+	    modelConfig: 'server/model-config.json',
+	    modelDir: 'common/models',
+	    serviceFile: 'client/app/scripts/lb-services.js'
     });
 
-    // Iterate over all specified file groups.
-    this.files.forEach(function(f) {
-      // Concat specified files.
-      var src = f.src.filter(function(filepath) {
-        // Warn on and remove invalid source files (if nonull was set).
-        if (!grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        } else {
-          return true;
-        }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
-      }).join(grunt.util.normalizelf(options.separator));
+	  var serviceFile;
+	  grunt.log.ok(options.serviceFile);
+	  try {
+		  serviceFile = grunt.file.read(options.serviceFile);
+		  grunt.log.ok('Loaded LoopBack service file %j', options.serviceFile);
+	  } catch (e) {
+		  var errService = new Error('Cannot load LoopBack service file ' + options.serviceFile);
+		  errService.origError = e;
+		  grunt.fail.warn(errService);
+	  }
 
-      // Handle options.
-      src += options.punctuation;
+	  var models;
+	  try {
+		  models = require(path.resolve(options.modelConfig));
+		  grunt.log.ok('Loaded LoopBack models file %j', options.modelConfig);
+	  } catch (e) {
+		  var err = new Error('Cannot load LoopBack models file ' + options.modelConfig);
+		  err.origError = e;
+		  grunt.fail.warn(err);
+	  }
+	  for (var modelName in models) {
+		  if (models[modelName].public){
+			  try {
+				  var model = require(path.resolve(options.modelDir+modelName+".json"));
+				  //grunt.log.ok('Loaded LoopBack model def file %j', modelName);
+			  } catch (e) {
+				  var modelErr = new Error('Cannot load LoopBack model file for ' + modelName);
+				  modelErr.origError = e;
+				  grunt.fail.warn(modelErr);
+			  }
+			  var regex = new RegExp("(module\\.factory\\([\\s]*\""+modelName+"\"[\\s\\S]*?)(return R;)");
+			  var replace = '$1'+'R.model='+JSON.stringify(model)+';\n\n'+'$2';
+			  serviceFile = serviceFile.replace(regex,replace);
+		  }
+	  }
 
-      // Write the destination file.
-      grunt.file.write(f.dest, src);
-
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
-    });
+	  //grunt.log.ok(serviceFile);
+	  grunt.file.write(options.serviceFile,serviceFile);
+	  grunt.log.ok('Modified angular services to include a new property "model" which holds the model json object', options.output);
   });
 
 };
