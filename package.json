@@ -1,0 +1,64 @@
+{
+  "name": "grunt-loopback-angular-addmodeldata",
+  "description": "Extends grunt-loopback-angular. auto-generating Angular $resource services for loopback will include model data for use at runtime on angular client",
+  "version": "0.2.0",
+  "homepage": "https://github.com/mrjrdnthms/loopback-angular-admin",
+  "author": {
+    "name": "Jordan Thomas",
+    "email": "jordan@everyvine.com",
+    "url": "www.everyvine.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrjrdnthms/loopback-angular-admin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrjrdnthms/loopback-angular-admin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mrjrdnthms/loopback-angular-admin/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "gitHead": "1e455709a650f7dd05ba0fc00abc3fca1817cb7f",
+  "_id": "grunt-loopback-angular-addmodeldata@0.1.0",
+  "_shasum": "81cb65fb1a245f976e4e1ecec63af0ff2b21917a",
+  "_from": "grunt-loopback-angular-addmodeldata@0.1.0",
+  "_npmVersion": "1.4.23",
+  "_npmUser": {
+    "name": "mrjrdnthms",
+    "email": "jordan@everyvine.com"
+  },
+  "maintainers": [
+    {
+      "name": "mrjrdnthms",
+      "email": "jordan@everyvine.com"
+    }
+  ],
+  "dist": {
+    "shasum": "81cb65fb1a245f976e4e1ecec63af0ff2b21917a",
+    "tarball": "http://registry.npmjs.org/grunt-loopback-angular-addmodeldata/-/grunt-loopback-angular-addmodeldata-0.1.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/grunt-loopback-angular-addmodeldata/-/grunt-loopback-angular-addmodeldata-0.1.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
