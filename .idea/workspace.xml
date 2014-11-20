@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9dcd045-acda-4b7f-b2e0-636ba13666c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/123" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/expected/custom_options" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/expected/default_options" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/loopback_angular_addModelData_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/testing" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/loopback_angular_addModelData.js" afterPath="$PROJECT_DIR$/tasks/loopback_angular_addModelData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="grunt-loopback-angular-addmodeldata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,38 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="loopback_angular_addModelData.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="loopback_angular_addModelData.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/loopback_angular_addModelData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1268" max-vertical-offset="2010">
-              <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.19421488" vertical-offset="626" max-vertical-offset="1170">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding>
-                <marker date="1416248870000" expanded="true" signature="3:284" placeholder="/*...*/" />
-                <marker date="1416248870000" expanded="true" signature="724:4715" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="832:963" placeholder="{&quot;modelConfig&quot;: 'server/model-config.json'...}" />
-                <marker date="1416248870000" expanded="true" signature="1029:1162" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1173:1330" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1352:1485" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1496:1631" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1664:2339" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1698:2335" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1708:1860" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="1871:2022" placeholder="{...}" />
-                <marker date="1416248870000" expanded="true" signature="2062:2109" placeholder="{...}" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34354487" vertical-offset="833" max-vertical-offset="1290">
-              <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,7 +66,6 @@
     <initial>false</initial>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -174,14 +141,6 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -192,14 +151,12 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -207,6 +164,16 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -230,28 +197,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -274,31 +241,12 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18802229" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/loopback_angular_addModelData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1268" max-vertical-offset="2010">
-          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="1140">
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
           <folding>
-            <marker date="1416248870000" expanded="true" signature="3:284" placeholder="/*...*/" />
-            <marker date="1416248870000" expanded="true" signature="724:4715" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="832:963" placeholder="{&quot;modelConfig&quot;: 'server/model-config.json'...}" />
-            <marker date="1416248870000" expanded="true" signature="1029:1162" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1173:1330" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1352:1485" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1496:1631" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1664:2339" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1698:2335" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1708:1860" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="1871:2022" placeholder="{...}" />
-            <marker date="1416248870000" expanded="true" signature="2062:2109" placeholder="{...}" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -308,9 +256,37 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34354487" vertical-offset="833" max-vertical-offset="1290">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="290" max-vertical-offset="1005">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18802229" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23194748" vertical-offset="269" max-vertical-offset="1005">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/loopback_angular_addModelData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19421488" vertical-offset="626" max-vertical-offset="1170">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

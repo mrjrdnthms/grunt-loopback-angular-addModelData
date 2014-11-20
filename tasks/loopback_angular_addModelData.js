@@ -45,6 +45,8 @@ module.exports = function(grunt) {
 		}
 		for (var modelName in models) {
 			if (models[modelName].public){
+				modelName = modelName.charAt(0).toUpperCase() + modelName.slice(1);
+				grunt.log.ok('Check '+modelName);
 				try {
 					var model = require(path.resolve(options.modelDir+modelName+".json"));
 					//grunt.log.ok('Loaded LoopBack model def file %j', modelName);
