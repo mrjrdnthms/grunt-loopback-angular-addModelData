@@ -49,18 +49,16 @@ module.exports = function(grunt) {
 				grunt.log.ok('Check '+modelName);
 				try {
 					var model = require(path.resolve(options.modelDir+modelName+".json"));
-					//grunt.log.ok('Loaded LoopBack model def file %j', modelName);
+					for (var prop in model.properties) {
+						model.properties[prop].key = prop;
+					}
+					var regex = new RegExp("(module\\.factory\\([\\s]*\""+modelName+"\"[\\s\\S]*?)(return R;)");
+					var replace = '$1'+'R.model='+JSON.stringify(model)+';\n\n'+'$2';
+					serviceFile = serviceFile.replace(regex,replace);
 				} catch (e) {
-					var modelErr = new Error('Cannot load LoopBack model file for ' + modelName);
-					modelErr.origError = e;
-					grunt.fail.warn(modelErr);
+					grunt.log.ok('Did not find a model.json file for ' + modelName);
 				}
-				for (var prop in model.properties) {
-					model.properties[prop].key = prop;
-				}
-				var regex = new RegExp("(module\\.factory\\([\\s]*\""+modelName+"\"[\\s\\S]*?)(return R;)");
-				var replace = '$1'+'R.model='+JSON.stringify(model)+';\n\n'+'$2';
-				serviceFile = serviceFile.replace(regex,replace);
+
 			}
 		}
 
