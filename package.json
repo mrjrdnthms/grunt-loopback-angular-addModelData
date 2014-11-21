@@ -1,7 +1,7 @@
 {
   "name": "grunt-loopback-angular-addmodeldata",
   "description": "Extends grunt-loopback-angular. auto-generating Angular $resource services for loopback will include model data for use at runtime on angular client",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/mrjrdnthms/loopback-angular-admin",
   "author": {
     "name": "Jordan Thomas",
