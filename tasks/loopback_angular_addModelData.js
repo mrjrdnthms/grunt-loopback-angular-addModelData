@@ -46,9 +46,13 @@ module.exports = function(grunt) {
 		for (var modelName in models) {
 			if (models[modelName].public){
 				modelName = modelName.charAt(0).toUpperCase() + modelName.slice(1);
+
+				// Get the model JSON file name that would be created by slc model generator
+				// CamelCaseModelName will become camel-case-model-name.json
+				var modelJSONFileName = String(modelName.split(/(?=[A-Z][a-z]+)/).join('-')+".json").toLowerCase();
 				grunt.log.ok('Check '+modelName);
 				try {
-					var model = require(path.resolve(options.modelDir+modelName+".json"));
+					var model = require(path.resolve(options.modelDir+modelJSONFileName));
 					for (var prop in model.properties) {
 						model.properties[prop].key = prop;
 					}
@@ -58,7 +62,6 @@ module.exports = function(grunt) {
 				} catch (e) {
 					grunt.log.ok('Did not find a model.json file for ' + modelName);
 				}
-
 			}
 		}
 
